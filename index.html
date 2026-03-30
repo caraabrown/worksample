@@ -54,8 +54,8 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
 .qa { font-size: 7pt; font-weight: 600; color: var(--accent); letter-spacing: .05em; }
 .srow { display: flex; gap: 2px; background: var(--rule); flex-shrink: 0; }
 .sc { flex: 1; background: var(--black); padding: .14in .1in; text-align: center; }
-.sn { display: block; font-family: 'EB Garamond', serif; font-size: 20pt; font-weight: 500; color: var(--white); line-height: 1; margin-bottom: .04in; }
-.sl { display: block; font-size: 5.5pt; font-weight: 400; text-transform: uppercase; letter-spacing: .05em; color: rgba(246,245,241,.36); line-height: 1.45; }
+.sn { display: block; font-family: 'EB Garamond', serif; font-size: 23pt; font-weight: 500; color: var(--white); line-height: 1; margin-bottom: .05in; }
+.sl { display: block; font-size: 6pt; font-weight: 400; text-transform: uppercase; letter-spacing: .05em; color: rgba(246,245,241,.58); line-height: 1.5; }
 .outrow { background: var(--navy); padding: .1in .3in .12in .4in; display: flex; flex-direction: column; gap: .07in; flex-shrink: 0; }
 .outlabel { font-size: 6.5pt; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: rgba(246,245,241,.3); }
 .outpills { display: flex; gap: 5px; flex-wrap: nowrap; align-items: center; width: 100%; }
@@ -109,9 +109,24 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
     <div style="padding:0 .75in .45in;">
       <div style="font-size:7pt;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,245,241,.38);margin-bottom:.14in;">Work Sample &nbsp;·&nbsp; Selected Case Studies</div>
       <div style="font-size:36pt;font-weight:300;letter-spacing:-.025em;color:var(--white);line-height:1.02;margin-bottom:.08in;"><strong style="font-weight:700;">Cara A. Brown,</strong> MBA</div>
-      <div style="font-size:10.5pt;font-weight:300;color:rgba(246,245,241,.42);letter-spacing:.05em;margin-bottom:.24in;">Design Strategist &nbsp;·&nbsp; Service Designer &nbsp;·&nbsp; Enterprise Experience &nbsp;·&nbsp; C-Suite Advisory</div>
-      <div style="height:1px;background:rgba(221,218,211,.2);margin-bottom:.24in;"></div>
-      <div style="font-size:9.5pt;font-weight:300;color:rgba(246,245,241,.5);line-height:1.78;max-width:5.8in;margin-bottom:.3in;">Five case studies spanning enterprise logistics, organizational change, civic innovation, community strategy, and workplace experience — each grounded in human-centered methods, delivered through stakeholder engagement, and measured by outcomes that outlast the engagement.</div>
+      <div style="font-size:10.5pt;font-weight:300;color:rgba(246,245,241,.42);letter-spacing:.05em;margin-bottom:.14in;">Design Strategist &nbsp;·&nbsp; Service Designer &nbsp;·&nbsp; Enterprise Experience &nbsp;·&nbsp; C-Suite Advisory</div>
+      <div style="font-size:10pt;font-weight:400;color:rgba(246,245,241,.72);line-height:1.55;max-width:6in;margin-bottom:.2in;">I embed in complex organizations to build the systems, methods, and infrastructure that create measurable, lasting change — across enterprise logistics, M&amp;A integration, civic innovation, nonprofit strategy, and cultural enterprise.</div>
+      <div style="height:1px;background:rgba(221,218,211,.2);margin-bottom:.18in;"></div>
+      <!-- Skills at a glance -->
+      <div style="display:flex;gap:2px;margin-bottom:.2in;">
+        <div style="flex:1;background:rgba(246,245,241,.04);padding:.12in .14in;border-top:1px solid rgba(42,64,128,.6);">
+          <span style="display:block;font-size:6pt;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:.07in;">Research + Synthesis</span>
+          <span style="display:block;font-size:7.5pt;font-weight:300;color:rgba(246,245,241,.5);line-height:1.65;">Human-Centered Research &nbsp;·&nbsp; Qualitative Methods &nbsp;·&nbsp; Synthesis &nbsp;·&nbsp; Insight Development &nbsp;·&nbsp; Impact Measurement &nbsp;·&nbsp; Systems Mapping</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.04);padding:.12in .14in;border-top:1px solid rgba(42,64,128,.6);">
+          <span style="display:block;font-size:6pt;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:.07in;">Service Design + Strategy</span>
+          <span style="display:block;font-size:7.5pt;font-weight:300;color:rgba(246,245,241,.5);line-height:1.65;">Service Blueprinting &nbsp;·&nbsp; Operating Model Design &nbsp;·&nbsp; Experience Architecture &nbsp;·&nbsp; Stakeholder Engagement &nbsp;·&nbsp; Change Management &nbsp;·&nbsp; Launch Strategy</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.04);padding:.12in .14in;border-top:1px solid rgba(42,64,128,.6);">
+          <span style="display:block;font-size:6pt;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:.07in;">Advisory + Leadership</span>
+          <span style="display:block;font-size:7.5pt;font-weight:300;color:rgba(246,245,241,.5);line-height:1.65;">C-Suite Communications &nbsp;·&nbsp; Workshop Facilitation &nbsp;·&nbsp; Executive Framing &nbsp;·&nbsp; Cross-functional Alignment &nbsp;·&nbsp; Influence Without Authority &nbsp;·&nbsp; Information Architecture</span>
+        </div>
+      </div>
       <!-- Case index -->
       <div style="display:flex;gap:2px;background:rgba(221,218,211,.12);">
         <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
@@ -156,10 +171,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 01</div>
+    <div class="case-n">Case 01 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Civic Innovation &nbsp;·&nbsp; Workshop Facilitation &nbsp;·&nbsp; Government</span></div>
     <div class="case-o">City of Oakland &nbsp;·&nbsp; The Lab at OPM &nbsp;·&nbsp; Cosine Collective &nbsp;·&nbsp; Civic Innovation</div>
     <div class="case-hl">Most workshops end with a deck. This one ended with the Mayor choosing to build it.</div>
-    <div class="case-tl">Coached a cross-government team through a full design strategy cycle — from problem framing to pitch-ready concept — as part of a Summer Design School run by The Lab at OPM. The capstone: Oakland's illegal dumping problem, and a solution the Mayor of Oakland selected for real-world implementation.</div>
+    <div class="case-tl">Coached a cross-government team through a full design cycle in 4 days — problem framing to pitch-ready concept. The Mayor of Oakland selected the solution for real-world civic implementation.</div>
   </div>
 
   <!-- Workshop photo as hero -->
@@ -243,10 +258,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 02</div>
+    <div class="case-n">Case 02 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Brand Strategy &nbsp;·&nbsp; Community Experience &nbsp;·&nbsp; Nonprofit</span></div>
     <div class="case-o">EOYDC &nbsp;·&nbsp; Brand + Experience + Built Environment Strategy &nbsp;·&nbsp; 2014–2024</div>
     <div class="case-hl">40 years of real impact. Zero coherent way to show — or inhabit — it.</div>
-    <div class="case-tl">Full brand, experience, space and engagement strategy reset — identity, messaging, digital, program environments, events, and executive communications — plus a new building launch used as a brand activation moment, built as a coherent communications system, which now has delivered over a decade of sustained engagement.</div>
+    <div class="case-tl">Full brand, experience, and engagement system reset — identity, digital, events, executive communications, and new building launch as a brand activation. $35M+ in resources secured within 8 months.</div>
   </div>
 
   <!-- Stats -->
@@ -323,10 +338,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%;opacity:0.38;display:block;"/>
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.15) 0%,rgba(13,13,11,.78) 100%);"></div>
     <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
-      <div class="case-n">Case 03</div>
+      <div class="case-n">Case 03 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Workplace Experience &nbsp;·&nbsp; Culture Integration &nbsp;·&nbsp; M&amp;A</span></div>
       <div class="case-o">GardaWorld &nbsp;·&nbsp; Workplace Experience Design &nbsp;·&nbsp; US + Canada &nbsp;·&nbsp; 2010–2012</div>
       <div style="font-family:'EB Garamond',serif;font-size:24pt;font-weight:400;color:var(--white);line-height:1.18;max-width:6.5in;">20,000 people. 2 cultures. 3 months to make them feel like 1 company.</div>
-      <div class="case-tl">Post-acquisition culture integration through workplace experience design — distributed recognition infrastructure, physical and digital environments, and a mobile platform that reached every field employee regardless of location.</div>
+      <div class="case-tl">Post-acquisition culture integration through workplace experience design. Theft dropped 97.5%. Absenteeism dropped 83%. Mobile platform in the App Store in 3 months.</div>
     </div>
   </div>
 
@@ -405,10 +420,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.48;display:block;"/>
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.75) 100%);"></div>
     <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
-      <div class="case-n">Case 04</div>
+      <div class="case-n">Case 04 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Service Design &nbsp;·&nbsp; M&amp;A Integration &nbsp;·&nbsp; Enterprise</span></div>
       <div class="case-o">Confidential Enterprise &nbsp;·&nbsp; Merger Integration Advisory &nbsp;·&nbsp; Service Design &nbsp;·&nbsp; 2023–2024</div>
       <div style="font-family:'EB Garamond',serif;font-size:24pt;font-weight:400;color:var(--white);line-height:1.18;max-width:6.5in;">A $16B merger needed an architecture, not just a plan</div>
-      <div class="case-tl">Cross-enterprise service blueprint program spanning the full supply chain — designed to surface risk, force consensus, and accelerate integration before disruption could take hold. Workshops across two organizations. 100% of business processes documented. C-suite artifacts delivered on schedule.</div>
+      <div class="case-tl">Cross-enterprise blueprint program spanning the full supply chain. 100% of business processes documented. C-suite artifacts delivered on schedule. Five design partners managed simultaneously across two organizations.</div>
     </div>
   </div>
 
@@ -485,10 +500,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 05</div>
+    <div class="case-n">Case 05 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Service Design &nbsp;·&nbsp; Change Management &nbsp;·&nbsp; Enterprise</span></div>
     <div class="case-o">Kroger &nbsp;·&nbsp; Enterprise Transportation &amp; Logistics &nbsp;·&nbsp; 30+ Distribution Centers &nbsp;·&nbsp; 2022–2025</div>
     <div class="case-hl">I turned a CEO complaint into a permanent enterprise health metric</div>
-    <div class="case-tl">Designed a new sentiment measurement framework from scratch — no precedent, no organizational owner, no baseline — then built the field research methodology, change management playbook, and stakeholder engagement program that made it institutional.</div>
+    <div class="case-tl">Built a driver sentiment measurement framework from scratch — no precedent, no owner, no baseline — then the research methodology and change management playbook that turned it into a funded, permanent enterprise function. NPS: −36 → +49.</div>
   </div>
 
   <!-- Qualtrics photo hero -->
@@ -568,15 +583,15 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 06</div>
+    <div class="case-n">Case 06 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Operational Diagnostics &nbsp;·&nbsp; Financial Framing &nbsp;·&nbsp; Enterprise</span></div>
     <div class="case-o">Kroger &nbsp;·&nbsp; Enterprise Transportation &amp; Logistics &nbsp;·&nbsp; 34 Distribution Centers &nbsp;·&nbsp; 2022–2023</div>
     <div class="case-hl">A three-year stall ended when I put a dollar figure on the problem</div>
-    <div class="case-tl">A trailer tracking initiative had been dormant for three years. Staff spent three-quarters of their day hunting lost trailers. Nobody had quantified what that was costing — until someone went to the ground to look. One page. The right numbers. Delivered at the right moment. That's what ended three years of inertia.</div>
+    <div class="case-tl">Field visits confirmed $270M weekly exposure. One financial framing document got 3 VPs to sign a charter — moving the initiative from 3 years dormant to enterprise rollout in 4 months.</div>
   </div>
 
   <!-- Insight Snapshot image -->
   <div style="position:relative;flex-shrink:0;">
-    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Insight-Snapshot.png"
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/pexels-marcin-jozwiak-199600-2800121-scaled.jpg"
          style="width:100%;height:auto;display:block;max-height:3in;object-fit:cover;object-position:center top;" alt="Insight snapshot that changed the meeting"/>
     <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
       <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">The insight snapshot that changed the meeting — one page, clear financial framing. The VP read it in the room and redirected the entire strategy conversation around it.</div>
@@ -649,10 +664,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 07</div>
+    <div class="case-n">Case 07 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Design Strategy &nbsp;·&nbsp; UX &nbsp;·&nbsp; Launch</span></div>
     <div class="case-o">shopMACK &nbsp;·&nbsp; Design Strategy + UX &nbsp;·&nbsp; E-Commerce Launch &nbsp;·&nbsp; 2014</div>
     <div class="case-hl">From a big concept and no model, to a launch-ready business and an industry award — in three months</div>
-    <div class="case-tl">A team of four design strategists partnered with an interior design entrepreneur to validate, define, and launch a novel e-commerce concept — grounding an ambitious idea in 50 interviews, a rigorous experience model, and a navigation architecture that made room-first shopping actually work.</div>
+    <div class="case-tl">50 interviews, one rigorous experience model, and a room-first navigation architecture — concept to industry-recognized launch in 3 months, zero scope creep.</div>
   </div>
 
   <!-- Stats -->
@@ -722,16 +737,16 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 08</div>
+    <div class="case-n">Case 08 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Operating Model &nbsp;·&nbsp; Cultural Enterprise &nbsp;·&nbsp; Founding Director</span></div>
     <div class="case-o">Lamont Bishop Gallery &nbsp;·&nbsp; Founding Director &nbsp;·&nbsp; Operating Model Build &nbsp;·&nbsp; 2010–Present</div>
     <div class="case-hl">I built a cultural enterprise from zero — and kept it standing for fifteen years, through two cities and a pandemic</div>
-    <div class="case-tl">From a blank canvas in Downtown DC to a Brooklyn presence with national press coverage, Art Basel partnerships, and a COVID-era physical footprint that survived — a real-world operating model built under reputational and financial pressure, with no prior infrastructure.</div>
+    <div class="case-tl">Full operating model built from scratch — Art Basel participation, national press, and a physical footprint that survived COVID. The model has never been sold or shuttered. That's the metric.</div>
   </div>
 
   <!-- Gallery image -->
   <div style="position:relative;flex-shrink:0;">
-    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Screen-Shot-2026-02-04-at-8.13.59-PM.png"
-         style="width:100%;height:auto;display:block;max-height:2.8in;object-fit:cover;object-position:center;" alt="Lamont Bishop Gallery"/>
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Bishop-Neptune-3.jpg"
+         style="width:100%;height:auto;display:block;max-height:2.8in;object-fit:cover;object-position:center top;" alt="Lamont Bishop Gallery"/>
     <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
       <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">Gallery experience — welcoming, accessible environments designed for first-time collectors and seasoned patrons alike.</div>
     </div>
@@ -805,14 +820,14 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
 
   <!-- Header over image -->
   <div style="position:relative;height:3.2in;flex-shrink:0;overflow:hidden;background:var(--black);">
-    <img src="https://caraabrown.com/wp-content/uploads/2026/02/EOYDC-Mapping-Success.png"
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Mapping-Proven-Pathways-.png"
          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.45;display:block;"/>
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.82) 100%);"></div>
     <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
-      <div class="case-n">Case 09</div>
+      <div class="case-n">Case 09 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Research &nbsp;·&nbsp; Impact Strategy &nbsp;·&nbsp; Nonprofit</span></div>
       <div class="case-o">EOYDC &nbsp;·&nbsp; Research + Impact Strategy &nbsp;·&nbsp; 2023–2024</div>
       <div style="font-family:'EB Garamond',serif;font-size:22pt;font-weight:400;color:var(--white);line-height:1.2;max-width:6.5in;">Qualitative outcomes translated into $500K — because funders invest in proof, not stories</div>
-      <div class="case-tl">A research methodology and decision-support system that converts scattered qualitative evidence into funder-credible impact proof. Built for EOYDC, deployed in a competitive grant cycle. The CEO adopted it as her primary tool in every grant meeting — including her TED Talk.</div>
+      <div class="case-tl">A research methodology that converts qualitative evidence into funder-credible proof. Supported a $500K Propel Next grant. The CEO adopted it as her primary tool in every grant meeting — including her TED Talk.</div>
     </div>
   </div>
 
@@ -889,15 +904,15 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
   <div class="abar"></div>
 
   <div class="case-hdr">
-    <div class="case-n">Case 10</div>
+    <div class="case-n">Case 10 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Service Architecture &nbsp;·&nbsp; Public Health &nbsp;·&nbsp; System Design</span></div>
     <div class="case-o">Keyways &nbsp;·&nbsp; Service Design + System Architecture &nbsp;·&nbsp; Opioid Support Access</div>
     <div class="case-hl">Shame was the barrier. The service architecture had to remove it — structurally, not symbolically</div>
-    <div class="case-tl">A stigma-aware access model built to reach people who couldn't afford to be seen — and move them toward care without increasing risk, exposure, or hesitation. Social-first entry, clinical pathway, participant website, service standards, and behavior-driven branding — five interlocking components designed as one system.</div>
+    <div class="case-tl">Five interlocking components designed to let people approach opioid support care privately, at their own pace, without forced disclosure. Privacy built into the system structure — not just promised.</div>
   </div>
 
   <!-- Keyways image -->
   <div style="position:relative;flex-shrink:0;">
-    <img src="https://caraabrown.com/wp-content/uploads/2025/11/World-Key-ways-2.png"
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/main.png"
          style="width:100%;height:auto;display:block;max-height:2.8in;object-fit:cover;object-position:center;" alt="Keyways program"/>
     <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
       <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">Keyways — a stigma-aware opioid support program designed for people who couldn't afford to be seen approaching care publicly.</div>
@@ -977,10 +992,10 @@ body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoo
          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.5;display:block;"/>
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.82) 100%);"></div>
     <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
-      <div class="case-n">Case 11</div>
+      <div class="case-n">Case 11 &nbsp;<span style="font-size:6pt;font-weight:400;letter-spacing:.08em;color:rgba(42,64,128,.7);text-transform:none;">Service Design &nbsp;·&nbsp; Platform &nbsp;·&nbsp; Nonprofit</span></div>
       <div class="case-o">EOYDC &nbsp;·&nbsp; Service Design + System Design &nbsp;·&nbsp; 2024</div>
       <div style="font-family:'EB Garamond',serif;font-size:22pt;font-weight:400;color:var(--white);line-height:1.2;max-width:6.5in;">Sponsor impact was real. No one could see it. I built a live platform that changed that</div>
-      <div class="case-tl">TravelTransforms converted scattered student stories, photos, and emails into a live, sponsor-accessible proof system — reducing reporting burden while making impact visible, reusable, and scalable for funding conversations.</div>
+      <div class="case-tl">Converted scattered student impact into a live, sponsor-accessible proof system — eliminating manual quarterly reporting while making 10 published artifacts reusable across all future funding conversations.</div>
     </div>
   </div>
 
