@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Work Sample — Cara A. Brown, MBA</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --black:  #0d0d0b;
+  --white:  #f6f5f1;
+  --off:    #efede8;
+  --mid:    #888680;
+  --rule:   #dddad3;
+  --ink:    #1e1e1c;
+  --navy:   #1a2744;
+  --accent: #2a4080;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background: #7a7975; -webkit-font-smoothing: antialiased; color: var(--ink); }
+
+/* ── PRINT BAR ── */
+.print-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: var(--navy); padding: 11px 36px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.print-bar p { font-size: 12px; color: rgba(246,245,241,.6); font-weight: 300; }
+.print-bar p strong { color: var(--white); font-weight: 600; }
+.btn-print { background: var(--white); color: var(--black); font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 9px 24px; border: none; cursor: pointer; }
+
+.doc { padding: 56px 0 48px; display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.page { width: 8.5in; height: 11in; background: var(--white); box-shadow: 0 8px 48px rgba(0,0,0,.38); display: flex; flex-direction: column; overflow: hidden; page-break-after: always; }
+
+/* ── SHARED ATOMS ── */
+.abar { height: 3px; background: var(--accent); flex-shrink: 0; }
+.ey { display: block; font-size: 6.5pt; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: .06in; margin-bottom: .09in; }
+.ey.dim { color: rgba(246,245,241,.45); border-bottom-color: rgba(221,218,211,.22); }
+.bc { font-size: 8.5pt; font-weight: 400; color: var(--ink); line-height: 1.72; }
+.bc strong { font-weight: 600; color: var(--black); }
+.bc.lt { color: rgba(246,245,241,.72); }
+.bc.lt strong { color: var(--white); }
+.bc.sm { font-size: 8pt; }
+.al { list-style: none; display: flex; flex-direction: column; gap: .08in; }
+.al li { font-size: 8pt; color: var(--ink); line-height: 1.6; padding-left: .15in; position: relative; }
+.al li::before { content: '—'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+.al.lt li { color: rgba(246,245,241,.72); }
+.al.lt li::before { color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { font-size: 6.5pt; font-weight: 500; color: var(--ink); padding: 3px 9px; border: 1px solid var(--rule); }
+.tag.lt { color: rgba(246,245,241,.65); border-color: rgba(221,218,211,.28); }
+.qb { border-left: 3px solid var(--accent); padding: .1in .13in; background: rgba(42,64,128,.08); }
+.qt { font-family: 'EB Garamond', serif; font-size: 10pt; font-style: italic; color: var(--ink); line-height: 1.55; margin-bottom: .06in; }
+.qt.lt { color: rgba(246,245,241,.82); }
+.qa { font-size: 7pt; font-weight: 600; color: var(--accent); letter-spacing: .05em; }
+.srow { display: flex; gap: 2px; background: var(--rule); flex-shrink: 0; }
+.sc { flex: 1; background: var(--black); padding: .14in .1in; text-align: center; }
+.sn { display: block; font-family: 'EB Garamond', serif; font-size: 20pt; font-weight: 500; color: var(--white); line-height: 1; margin-bottom: .04in; }
+.sl { display: block; font-size: 5.5pt; font-weight: 400; text-transform: uppercase; letter-spacing: .05em; color: rgba(246,245,241,.36); line-height: 1.45; }
+.outrow { background: var(--navy); padding: .1in .3in .12in .4in; display: flex; flex-direction: column; gap: .07in; flex-shrink: 0; }
+.outlabel { font-size: 6.5pt; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: rgba(246,245,241,.3); }
+.outpills { display: flex; gap: 5px; flex-wrap: nowrap; align-items: center; width: 100%; }
+.pill { font-size: 6.5pt; font-weight: 500; color: var(--white); padding: 3px 0; border: 1px solid rgba(246,245,241,.22); white-space: nowrap; letter-spacing: .03em; flex: 1; text-align: center; }
+.pfoot { background: var(--black); padding: .08in .55in; display: flex; justify-content: space-between; flex-shrink: 0; }
+.pfoot span { font-size: 6.5pt; font-weight: 300; letter-spacing: .06em; color: rgba(246,245,241,.28); }
+
+/* ── DARK CASE HEADER (shared) ── */
+.case-hdr { background: var(--black); padding: .18in .65in .16in; display: flex; flex-direction: column; gap: .04in; flex-shrink: 0; }
+.case-n { font-size: 7pt; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: var(--accent); }
+.case-o { font-size: 7pt; font-weight: 400; letter-spacing: .09em; text-transform: uppercase; color: rgba(246,245,241,.34); }
+.case-hl { font-family: 'EB Garamond', serif; font-size: 22pt; font-weight: 400; color: var(--white); line-height: 1.2; max-width: 7in; }
+.case-tl { font-size: 8.5pt; font-weight: 300; color: rgba(246,245,241,.5); line-height: 1.6; }
+
+/* ── 3-COL TEXT BODY (shared) ── */
+.body3 { flex: 1; display: flex; gap: 2px; background: var(--rule); min-height: 0; }
+.col-w { background: var(--white); padding: .18in .22in .14in .65in; display: flex; flex-direction: column; gap: .12in; flex: 1; }
+.col-o { background: var(--off); padding: .18in .22in .14in .22in; display: flex; flex-direction: column; gap: .12in; flex: 1; }
+.col-wr { background: var(--white); padding: .18in .65in .14in .22in; display: flex; flex-direction: column; gap: .12in; flex: 1; }
+
+/* ── PRINT ── */
+@media print {
+  @page { size: letter; margin: 0; }
+  body { background: none; }
+  .print-bar { display: none !important; }
+  .doc { padding: 0; gap: 0; }
+  .page { box-shadow: none; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="print-bar">
+  <p><strong>To save as PDF:</strong> Chrome → File → Print → Destination: Save as PDF → Margins: None · ✓ Background graphics → Save</p>
+  <button class="btn-print" onclick="window.print()">Save as PDF</button>
+</div>
+
+<div class="doc">
+
+<!-- ═══════════════════════════════════
+     PAGE 1 — COVER
+════════════════════════════════════ -->
+<div class="page" style="position:relative;background:var(--black);">
+  <img style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0.38;"
+       src="https://caraabrown.com/wp-content/uploads/2025/11/cara1-scaled.jpg" alt="Cara A. Brown"/>
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.2) 0%,rgba(13,13,11,.1) 30%,rgba(13,13,11,.7) 65%,rgba(13,13,11,.97) 100%);"></div>
+  <div style="position:relative;z-index:1;display:flex;flex-direction:column;height:100%;">
+    <div style="height:3px;background:var(--accent);flex-shrink:0;"></div>
+    <div style="flex:1;"></div>
+    <div style="padding:0 .75in .45in;">
+      <div style="font-size:7pt;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,245,241,.38);margin-bottom:.14in;">Work Sample &nbsp;·&nbsp; Selected Case Studies</div>
+      <div style="font-size:36pt;font-weight:300;letter-spacing:-.025em;color:var(--white);line-height:1.02;margin-bottom:.08in;"><strong style="font-weight:700;">Cara A. Brown,</strong> MBA</div>
+      <div style="font-size:10.5pt;font-weight:300;color:rgba(246,245,241,.42);letter-spacing:.05em;margin-bottom:.24in;">Design Strategist &nbsp;·&nbsp; Service Designer &nbsp;·&nbsp; Enterprise Experience &nbsp;·&nbsp; C-Suite Advisory</div>
+      <div style="height:1px;background:rgba(221,218,211,.2);margin-bottom:.24in;"></div>
+      <div style="font-size:9.5pt;font-weight:300;color:rgba(246,245,241,.5);line-height:1.78;max-width:5.8in;margin-bottom:.3in;">Five case studies spanning enterprise logistics, organizational change, civic innovation, community strategy, and workplace experience — each grounded in human-centered methods, delivered through stakeholder engagement, and measured by outcomes that outlast the engagement.</div>
+      <!-- Case index -->
+      <div style="display:flex;gap:2px;background:rgba(221,218,211,.12);">
+        <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
+          <span style="display:block;font-size:7pt;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:.05in;">01</span>
+          <span style="display:block;font-size:8.5pt;font-weight:600;color:var(--white);line-height:1.28;margin-bottom:3px;">Design Facilitation</span>
+          <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.32);line-height:1.4;">City of Oakland · Civic Innovation · OPM Lab</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
+          <span style="display:block;font-size:7pt;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:.05in;">02</span>
+          <span style="display:block;font-size:8.5pt;font-weight:600;color:var(--white);line-height:1.28;margin-bottom:3px;">New Era Brand + Space Strategy</span>
+          <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.32);line-height:1.4;">EOYDC · Community + Built Environment · 2014–2024</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
+          <span style="display:block;font-size:7pt;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:.05in;">03</span>
+          <span style="display:block;font-size:8.5pt;font-weight:600;color:var(--white);line-height:1.28;margin-bottom:3px;">GardaCares Workplace Platform</span>
+          <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.32);line-height:1.4;">GardaWorld · Workplace Experience · 2010–2012</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
+          <span style="display:block;font-size:7pt;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:.05in;">04</span>
+          <span style="display:block;font-size:8.5pt;font-weight:600;color:var(--white);line-height:1.28;margin-bottom:3px;">$16B Merger Integration</span>
+          <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.32);line-height:1.4;">Confidential · Change Advisory · 2023–2024</span>
+        </div>
+        <div style="flex:1;background:rgba(246,245,241,.05);padding:.18in .18in .16in;border-top:2px solid var(--accent);">
+          <span style="display:block;font-size:7pt;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:.05in;">05</span>
+          <span style="display:block;font-size:8.5pt;font-weight:600;color:var(--white);line-height:1.28;margin-bottom:3px;">Carrier Experience Survey</span>
+          <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.32);line-height:1.4;">Kroger · Field Research + Change Mgmt · 2022–2025</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;padding:.14in .75in;border-top:1px solid rgba(221,218,211,.1);">
+      <span style="font-size:7pt;font-weight:300;color:rgba(246,245,241,.28);letter-spacing:.06em;">See complete portfolio at caraabrown.com</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 2 — DESIGN FACILITATOR
+     Civic innovation, OPM Lab, Mayor selected
+════════════════════════════════════ -->
+<div class="page" style="background:var(--white);">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 01</div>
+    <div class="case-o">City of Oakland &nbsp;·&nbsp; The Lab at OPM &nbsp;·&nbsp; Cosine Collective &nbsp;·&nbsp; Civic Innovation</div>
+    <div class="case-hl">Most workshops end with a deck. This one ended with the Mayor choosing to build it.</div>
+    <div class="case-tl">Coached a cross-government team through a full design strategy cycle — from problem framing to pitch-ready concept — as part of a Summer Design School run by The Lab at OPM. The capstone: Oakland's illegal dumping problem, and a solution the Mayor of Oakland selected for real-world implementation.</div>
+  </div>
+
+  <!-- Workshop photo as hero -->
+  <div style="position:relative;flex-shrink:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2025/12/Summer-Design-School-Lab@OPM-Design-Facilitator.png"
+         style="width:100%;height:auto;display:block;max-height:3.6in;object-fit:cover;object-position:left 60%;" alt="Design facilitation in progress"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
+      <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">Coaching in action — guiding federal employees from the US, UK, and Australia through applied design methods on a live civic challenge.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">4 Days</span><span class="sl">Problem Framing<br/>to Mayor Pitch</span></div>
+    <div class="sc"><span class="sn">3 Gov'ts</span><span class="sl">US · UK · Australia<br/>Federal Participants</span></div>
+    <div class="sc"><span class="sn">1st</span><span class="sl">Oakland's Mayor crowned<br/>our solution the winner</span></div>
+    <div class="sc"><span class="sn">Live</span><span class="sl">Civic Program<br/>Built from Outcome</span></div>
+  </div>
+
+  <!-- 3-col body -->
+  <div class="body3">
+    <div class="col-w">
+      <span class="ey">The Challenge</span>
+      <p class="bc">Oakland's illegal dumping problem: complex, systemic, deeply felt by residents, and resistant to standard policy responses. <strong>The facilitation challenge was as much about building shared working conditions across governments as it was about guiding content.</strong></p>
+      <p class="bc sm">Participants had different government contexts, working styles, and levels of familiarity with design methods. The goal wasn't a good workshop — it was a team that could think differently, and a solution a city could actually use.</p>
+    </div>
+
+    <div class="col-o">
+      <span class="ey">How I Facilitated</span>
+      <ul class="al">
+        <li>Observed and leaned into each participant's strengths to best guide them through problem framing → research → synthesis → concept → pitch — harmonizing their efforts</li>
+        <li>Applied human-centered research methods in real time against the actual problem — not theory in isolation</li>
+        <li>Made tradeoffs explicit at every decision point — tested concepts against real operational constraints before the pitch</li>
+        <li>Refined the final pitch for a non-design audience: the Mayor and city leadership needed to see immediate civic value</li>
+      </ul>
+    </div>
+
+    <div class="col-wr">
+      <div class="qb">
+        <div class="qt">"The facilitation was the design work — structuring process, making tradeoffs legible, and shaping a pitch that could land with city leadership."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey">Role</span>
+        <div class="tags">
+          <span class="tag">Design Strategy Coach</span>
+          <span class="tag">Facilitator</span>
+          <span class="tag">Synthesis + Sensemaking</span>
+          <span class="tag">Executive Storytelling</span>
+        </div>
+      </div>
+      <div>
+        <span class="ey">Partners</span>
+        <div class="tags">
+          <span class="tag">The Lab at OPM</span>
+          <span class="tag">City of Oakland</span>
+          <span class="tag">Cosine Collective</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">Trash Dash selected by Mayor of Oakland</span>
+      <span class="pill">Chosen for real-world civic implementation</span>
+      <span class="pill">Cross-government team aligned in 4 days</span>
+      <span class="pill">Repeatable design method transferred to participants</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 3 — EOYDC / NEW ERA
+     Community + built environment strategy
+════════════════════════════════════ -->
+<div class="page">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 02</div>
+    <div class="case-o">EOYDC &nbsp;·&nbsp; Brand + Experience + Built Environment Strategy &nbsp;·&nbsp; 2014–2024</div>
+    <div class="case-hl">40 years of real impact. Zero coherent way to show — or inhabit — it.</div>
+    <div class="case-tl">Full brand, experience, space and engagement strategy reset — identity, messaging, digital, program environments, events, and executive communications — plus a new building launch used as a brand activation moment, built as a coherent communications system, which now has delivered over a decade of sustained engagement.</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">$35M+</span><span class="sl">Resources Secured<br/>Within 8 Months</span></div>
+    <div class="sc"><span class="sn">Gold ×3</span><span class="sl">MarCom Awards<br/>+ Honorable Mention</span></div>
+    <div class="sc"><span class="sn">TED</span><span class="sl">CEO Positioned<br/>&amp; Prepared</span></div>
+    <div class="sc"><span class="sn">10+</span><span class="sl">Corporate Partners<br/>GSW · Raiders · Lexus · Apple · Google · Southwest · IKEA</span></div>
+  </div>
+
+  <!-- Body: Curry full-bleed, text pinned to bottom -->
+  <div style="flex:1;position:relative;overflow:hidden;min-height:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/New-Era-Curry.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,11,.97) 0%,rgba(13,13,11,.55) 40%,transparent 70%);"></div>
+
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:.28in .65in .26in;">
+      <div style="display:flex;gap:2px;">
+
+        <div style="flex:1;padding-right:.3in;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">The Challenge</span>
+          <p style="font-size:8pt;color:rgba(246,245,241,.78);line-height:1.65;font-weight:300;">Thousands of alumni, donors, and partners — with no reliable way to reach them. The CEO was calling people on her cell phone to fill events. Every relationship lived in her head. <strong style="color:var(--white);">Without cohesion, even legitimate impact is undecipherable.</strong> Funders couldn't validate nor valuate. Partners couldn't orient. A new facility created both the pressure and the opportunity for a full reset — enabling <strong style="color:var(--white);">$35M+ in resources secured within 8 months.</strong></p>
+        </div>
+
+        <div style="flex:1;padding-right:.3in;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">The Approach</span>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.07in;">
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Turned a dormant supporter list into a functioning engagement network — replacing grassroots outreach with a scalable system, freeing the CEO from being the only point of contact for thousands</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Interdepartmental ways of working + training — the art of critique replaced criticism and unified language increased team cohesion</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Elevated the CEO from den mother to accomplished nonprofit executive — a leadership platform, not a cell phone</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>IA redesigned — funders validate impact easily, community navigates intuitively, alumni engage consistently</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>New facility launch designed as a full brand and community activation moment</li>
+          </ul>
+        </div>
+
+        <div style="flex:1;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">The System</span>
+          <p style="font-size:7pt;color:rgba(246,245,241,.72);line-height:1.6;font-weight:300;margin-bottom:.1in;">The identity, the content, the navigation, the programs, the events, the leader — these are not aesthetic decisions. They are the conditions under which stakeholders decide whether to engage, whether to fund, whether to trust. The system built here gave the organization a front door, a program suite, a leadership platform, and a partner ecosystem that could finally operationalize the magnitude of what was happening inside.</p>
+          <div style="background:rgba(26,39,68,.9);border-left:3px solid #c9a84c;padding:.1in .12in;">
+            <span style="display:block;font-size:8pt;font-weight:700;color:var(--white);">MarCom Gold Award ×3</span>
+            <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.5);margin-top:2px;">Building Character to Build Communities &nbsp;·&nbsp; + 1 Honorable Mention</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">$34M anonymous donation</span>
+      <span class="pill">$500K PropelNext grant</span>
+      <span class="pill">$31K #CloseTheGap campaign</span>
+      <span class="pill">↑ Digital engagement</span>
+      <span class="pill">Codified fundraising process</span>
+      <span class="pill">National major media coverage</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 4 — GARDACARES
+     Workplace experience design, 20K employees
+════════════════════════════════════ -->
+<div class="page" style="background:var(--black);">
+  <div class="abar"></div>
+
+  <!-- Header with GardaCares app image as bg -->
+  <div style="position:relative;height:3.6in;flex-shrink:0;overflow:hidden;background:var(--black);">
+    <img src="https://caraabrown.com/wp-content/uploads/2025/12/Screen-Shot-2018-01-12-at-11.09.22-AM.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%;opacity:0.38;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.15) 0%,rgba(13,13,11,.78) 100%);"></div>
+    <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
+      <div class="case-n">Case 03</div>
+      <div class="case-o">GardaWorld &nbsp;·&nbsp; Workplace Experience Design &nbsp;·&nbsp; US + Canada &nbsp;·&nbsp; 2010–2012</div>
+      <div style="font-family:'EB Garamond',serif;font-size:24pt;font-weight:400;color:var(--white);line-height:1.18;max-width:6.5in;">20,000 people. 2 cultures. 3 months to make them feel like 1 company.</div>
+      <div class="case-tl">Post-acquisition culture integration through workplace experience design — distributed recognition infrastructure, physical and digital environments, and a mobile platform that reached every field employee regardless of location.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow">
+    <div class="sc"><span class="sn">20K+</span><span class="sl">Employees Reached<br/>US + Canada</span></div>
+    <div class="sc"><span class="sn">20→0.5%</span><span class="sl">Employee Theft<br/>97.5% Reduction</span></div>
+    <div class="sc"><span class="sn">30→5%</span><span class="sl">Absenteeism<br/>83% Reduction</span></div>
+    <div class="sc"><span class="sn">3 mo.</span><span class="sl">Discovery to<br/>App Store Launch</span></div>
+  </div>
+
+  <!-- 2-col body on dark -->
+  <div style="flex:1;display:flex;gap:1px;background:rgba(221,218,211,.12);">
+
+    <div style="flex:1;padding:.28in .28in .24in .65in;display:flex;flex-direction:column;gap:.2in;background:rgba(13,13,11,.6);">
+      <div>
+        <span class="ey dim">The Challenge</span>
+        <p class="bc lt">GardaWorld grew by acquisition. Each company brought its own culture, loyalties, and identity. A previous "GardaCares" slogan existed only as an email footer. <strong style="color:var(--white);">The cultural fault line ran between French-Canadian and American operations</strong> — two distinct cultural groups being asked to function as one workforce without the soft infrastructure to make it possible.</p>
+      </div>
+      <div>
+        <span class="ey dim">The Approach</span>
+        <ul class="al lt">
+          <li>Primary research to diagnose the cultural dimensions — discovery before design</li>
+          <li>Built a coalition of business center managers across both cultures to create internal legitimacy before public launch</li>
+          <li>Physical recognition billboards in every business center — local wins visible locally</li>
+          <li>Photo/video submission channels so employees surfaced moments from their own centers</li>
+          <li>Mobile app launched in Apple App Store — giving field employees access regardless of desk access</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="flex:1;padding:.28in .65in .24in .28in;display:flex;flex-direction:column;gap:.2in;background:rgba(26,39,68,.45);">
+      <div style="border-left:3px solid var(--accent);padding:.14in .16in;background:rgba(42,64,128,.2);">
+        <div class="qt lt">"The previous attempt failed because it was a slogan. This succeeded because it was a system — one designed around what employees actually responded to."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey dim">Role</span>
+        <div class="tags">
+          <span class="tag lt">Experience Design Lead</span>
+          <span class="tag lt">Culture Integration</span>
+          <span class="tag lt">M&A Stabilization</span>
+          <span class="tag lt">Primary Research</span>
+          <span class="tag lt">Platform Design</span>
+          <span class="tag lt">Executive Stakeholder Mgmt</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">Theft: 20% → 0.5%</span>
+      <span class="pill">Absenteeism: 30% → 5%</span>
+      <span class="pill">Mobile app in App Store in 3 months</span>
+      <span class="pill">Championed by company president</span>
+      <span class="pill">20,000+ employees harmonized</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 5 — MERGER INTEGRATION
+     Blueprint framework, cross-enterprise workshops
+════════════════════════════════════ -->
+<div class="page" style="background:var(--black);">
+  <div class="abar"></div>
+
+  <!-- Gigamap hero header -->
+  <div style="position:relative;height:3.6in;flex-shrink:0;overflow:hidden;background:var(--black);">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Gigamap-printed.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.48;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.75) 100%);"></div>
+    <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
+      <div class="case-n">Case 04</div>
+      <div class="case-o">Confidential Enterprise &nbsp;·&nbsp; Merger Integration Advisory &nbsp;·&nbsp; Service Design &nbsp;·&nbsp; 2023–2024</div>
+      <div style="font-family:'EB Garamond',serif;font-size:24pt;font-weight:400;color:var(--white);line-height:1.18;max-width:6.5in;">A $16B merger needed an architecture, not just a plan</div>
+      <div class="case-tl">Cross-enterprise service blueprint program spanning the full supply chain — designed to surface risk, force consensus, and accelerate integration before disruption could take hold. Workshops across two organizations. 100% of business processes documented. C-suite artifacts delivered on schedule.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow">
+    <div class="sc"><span class="sn">$16B</span><span class="sl">Merger Deal Value<br/>Protected</span></div>
+    <div class="sc"><span class="sn">100%</span><span class="sl">Business Process<br/>Docs Created</span></div>
+    <div class="sc"><span class="sn">5</span><span class="sl">Design Partners<br/>Managed Simultaneously</span></div>
+    <div class="sc"><span class="sn">4</span><span class="sl">Blueprint Fidelity<br/>Levels Developed</span></div>
+  </div>
+
+  <!-- 2-col body -->
+  <div style="flex:1;display:flex;gap:1px;background:rgba(221,218,211,.12);">
+
+    <div style="flex:1;padding:.28in .28in .24in .65in;display:flex;flex-direction:column;gap:.2in;background:rgba(13,13,11,.6);">
+      <div>
+        <span class="ey dim">The Challenge</span>
+        <p class="bc lt">Two enterprises. Incompatible operating models. No shared language for what had to change — or when. Every pillar had its own complexity and its own stakeholders protecting their turf. <strong style="color:var(--white);">What was missing wasn't effort. It was architecture.</strong></p>
+      </div>
+      <div>
+        <span class="ey dim">The Approach</span>
+        <ul class="al lt">
+          <li>4-fidelity level (4F) blueprint framework — from hypothesis sketches to fully detailed, socialization-ready artifacts with embedded decision logs</li>
+          <li>Hypothesis-led workshops across both organizations to surface ground truth and force decision points</li>
+          <li>Managed 5 design counterparts simultaneously across both enterprises</li>
+          <li>Repeatable workflow applied to each integration pillar with consistent rigor</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="flex:1;padding:.28in .65in .24in .28in;display:flex;flex-direction:column;gap:.2in;background:rgba(26,39,68,.45);">
+      <div style="border-left:3px solid var(--accent);padding:.14in .16in;background:rgba(42,64,128,.2);">
+        <div class="qt lt">"Seeing things at enterprise-wide scale — and telescoping down to nuance without losing either — is the rare skill that makes Design Strategists irreplaceable in integration work."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey dim">The Blueprint System</span>
+        <p class="bc lt sm">The 4F blueprint was the definitive final artifact — all decisions, who made them, when, and who participated. <strong style="color:var(--white);">Documentation is now accountability infrastructure.</strong> This is the deliverable standard a strategist embedded in complex projects expect from a strategist embedded in complex projects.</p>
+      </div>
+      <div>
+        <span class="ey dim">Role</span>
+        <div class="tags">
+          <span class="tag lt">Service Design Lead</span>
+          <span class="tag lt">Integration Advisory</span>
+          <span class="tag lt">Blueprint Design</span>
+          <span class="tag lt">Workshop Facilitation</span>
+          <span class="tag lt">C-Suite Deliverables</span>
+          <span class="tag lt">Change Management</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">100% business process docs created</span>
+      <span class="pill">Cross-enterprise consensus achieved</span>
+      <span class="pill">Risk surfaced, mapped pre-disruption</span>
+      <span class="pill">C-suite artifacts on schedule</span>
+      <span class="pill">4F Fidelity service blueprints</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 6 — CARRIER EXPERIENCE SURVEY
+     Field research, change management, enterprise rollout
+════════════════════════════════════ -->
+<div class="page" style="background:var(--white);">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 05</div>
+    <div class="case-o">Kroger &nbsp;·&nbsp; Enterprise Transportation &amp; Logistics &nbsp;·&nbsp; 30+ Distribution Centers &nbsp;·&nbsp; 2022–2025</div>
+    <div class="case-hl">I turned a CEO complaint into a permanent enterprise health metric</div>
+    <div class="case-tl">Designed a new sentiment measurement framework from scratch — no precedent, no organizational owner, no baseline — then built the field research methodology, change management playbook, and stakeholder engagement program that made it institutional.</div>
+  </div>
+
+  <!-- Qualtrics photo hero -->
+  <div style="position:relative;flex-shrink:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2025/11/Karl-Neimann-VP-of-HR-presents-the-Carrier-Experience-Survey-at-Qualtrics-Conferece.jpg"
+         style="width:100%;height:auto;display:block;max-height:3in;object-fit:cover;object-position:center 55%;" alt="VP of HR at Qualtrics Conference"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
+      <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">VP of HR presents the Carrier Experience Survey at the annual Qualtrics Conference — without Cara in the room. The program had become institutional.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">+85pt</span><span class="sl">NPS Swing<br/>−36 → +49</span></div>
+    <div class="sc"><span class="sn">100%</span><span class="sl">DC Enrollment<br/>Achieved</span></div>
+    <div class="sc"><span class="sn">36→73%</span><span class="sl">Satisfaction Lift<br/>Human-Centered Research Driven</span></div>
+    <div class="sc"><span class="sn">5</span><span class="sl">C-Suite Members<br/>Company Wide Recognition</span></div>
+  </div>
+
+  <!-- 3-col body -->
+  <div class="body3">
+    <div class="col-w">
+      <span class="ey">The Challenge</span>
+      <p class="bc">Angry drivers were emailing the CEO demanding a better delivery process and experience. When drivers opt out, <strong>shelves go empty.</strong> My 2nd day at Kroger I was assigned to fix it — no measurement framework, no design precedent, no organizational owner. I built all three from scratch through on-site discovery across the network, research rigor and gamificaiton. It became institutional: the program graduated from a single initiative into a funded, staffed team.</p>
+    </div>
+
+    <div class="col-o">
+      <span class="ey">The Approach</span>
+      <ul class="al">
+        <li>On-site field research across the DC network — root causes across people, process, policy, technology</li>
+        <li>Designed an enterprise human-centered sentiment metric from scratch — first measurable indicator of driver experience at scale</li>
+        <li>Gamified stakeholder engagement program driving 100% DC enrollment with zero prior design exposure</li>
+        <li>Piloted one region, built a change management playbook, 6-month enterprise rollout to 30+ sites</li>
+      </ul>
+    </div>
+
+    <div class="col-wr">
+      <div class="qb">
+        <div class="qt">"This is Fantastic and Creative!! Well Done — exciting to see how we can scale in other areas."</div>
+        <div class="qa">Rodney McMullen — Chairman &amp; CEO, Kroger</div>
+      </div>
+      <div>
+        <span class="ey">Role</span>
+        <div class="tags">
+          <span class="tag">Service Design Lead</span>
+          <span class="tag">Human-Centered Research</span>
+          <span class="tag">Measurement Design</span>
+          <span class="tag">Change Management</span>
+          <span class="tag">Stakeholder Engagement</span>
+          <span class="tag">Enterprise Rollout</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">NPS −36 → +49</span>
+      <span class="pill">Satisfaction 36% → 73%</span>
+      <span class="pill">CEO recognition</span>
+      <span class="pill">EVP adopted permanent KPI</span>
+      <span class="pill">Dedicated role funded nationally</span>
+      <span class="pill">Natl Recognition @Qualtrics Conference</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+
+<!-- ═══════════════════════════════════
+     PAGE 7 — TRAILER TRACKING
+     Kroger · Enterprise Transportation · Operational Diagnostic
+════════════════════════════════════ -->
+<div class="page" style="background:var(--white);">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 06</div>
+    <div class="case-o">Kroger &nbsp;·&nbsp; Enterprise Transportation &amp; Logistics &nbsp;·&nbsp; 34 Distribution Centers &nbsp;·&nbsp; 2022–2023</div>
+    <div class="case-hl">A three-year stall ended when I put a dollar figure on the problem</div>
+    <div class="case-tl">A trailer tracking initiative had been dormant for three years. Staff spent three-quarters of their day hunting lost trailers. Nobody had quantified what that was costing — until someone went to the ground to look. One page. The right numbers. Delivered at the right moment. That's what ended three years of inertia.</div>
+  </div>
+
+  <!-- Insight Snapshot image -->
+  <div style="position:relative;flex-shrink:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Insight-Snapshot.png"
+         style="width:100%;height:auto;display:block;max-height:3in;object-fit:cover;object-position:center top;" alt="Insight snapshot that changed the meeting"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
+      <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">The insight snapshot that changed the meeting — one page, clear financial framing. The VP read it in the room and redirected the entire strategy conversation around it.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">$270M</span><span class="sl">Weekly Exposure<br/>Quantified Across 34 DCs</span></div>
+    <div class="sc"><span class="sn">220%</span><span class="sl">Projected ROI<br/>$10.5M vs. $4.6M Cost</span></div>
+    <div class="sc"><span class="sn">4 mo.</span><span class="sl">Stall → Enterprise<br/>Rollout</span></div>
+    <div class="sc"><span class="sn">3 VPs</span><span class="sl">Signed the Charter<br/>Cross-Functional Alignment</span></div>
+  </div>
+
+  <!-- 3-col body -->
+  <div class="body3">
+    <div class="col-w">
+      <span class="ey">The Challenge</span>
+      <p class="bc">Transportation was bleeding money visible on spreadsheets — but leadership couldn't pinpoint the reasons on the ground, because staff put on their best face and gave the right answers. A Supply Chain VP stopped a strategy meeting mid-presentation: <strong>"I don't know what you're talking about."</strong> Three years of initiative stall had produced no financial case and no field truth.</p>
+    </div>
+
+    <div class="col-o">
+      <span class="ey">The Approach</span>
+      <ul class="al">
+        <li>Visited 5 distribution centers — replaced untested assumptions with validated on-the-ground evidence: $15M confirmed lost at a single site in one visit</li>
+        <li>Translated operational reality into financial language — one-page insight snapshot the VP printed, read in the room, and acted on immediately</li>
+        <li>Built a custom multi-tab product requirements framework mapping field findings directly to specs — creating team velocity</li>
+        <li>Built the Collaborative Thinking Dojo: charter, research, and requirements in one shared source of truth</li>
+      </ul>
+    </div>
+
+    <div class="col-wr">
+      <div class="qb">
+        <div class="qt">"The real problem is almost never the problem they present. The most important work happens before any tool is designed — when someone finally goes to the ground."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey">Role</span>
+        <div class="tags">
+          <span class="tag">Senior Service Designer</span>
+          <span class="tag">Operational Diagnostics</span>
+          <span class="tag">Financial Impact Modeling</span>
+          <span class="tag">Executive Framing</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Product Requirements</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">$270M exposure quantified</span>
+      <span class="pill">220% ROI case made</span>
+      <span class="pill">3-year stall broken in 4 months</span>
+      <span class="pill">3 VPs aligned</span>
+      <span class="pill">Enterprise charter signed</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 8 — SHOPMACK
+     Design Strategy · Concept to Award-Winning Launch
+════════════════════════════════════ -->
+<div class="page">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 07</div>
+    <div class="case-o">shopMACK &nbsp;·&nbsp; Design Strategy + UX &nbsp;·&nbsp; E-Commerce Launch &nbsp;·&nbsp; 2014</div>
+    <div class="case-hl">From a big concept and no model, to a launch-ready business and an industry award — in three months</div>
+    <div class="case-tl">A team of four design strategists partnered with an interior design entrepreneur to validate, define, and launch a novel e-commerce concept — grounding an ambitious idea in 50 interviews, a rigorous experience model, and a navigation architecture that made room-first shopping actually work.</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">50</span><span class="sl">Interviews Conducted<br/>+ Surveys + Observations</span></div>
+    <div class="sc"><span class="sn">3 mo.</span><span class="sl">Concept to<br/>Launch-Ready Strategy</span></div>
+    <div class="sc"><span class="sn">4</span><span class="sl">Navigation Paths<br/>for Distinct Shopping Mindsets</span></div>
+    <div class="sc"><span class="sn">Award</span><span class="sl">iMediaConnection<br/>Innovative e-Commerce 2014</span></div>
+  </div>
+
+  <!-- Full-bleed image with text overlay -->
+  <div style="flex:1;position:relative;overflow:hidden;min-height:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2025/12/Shop-Mack-Home-Page.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,11,.97) 0%,rgba(13,13,11,.45) 40%,transparent 70%);"></div>
+
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:.28in .65in .26in;">
+      <div style="display:flex;gap:2px;">
+
+        <div style="flex:1;padding-right:.3in;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">The Challenge</span>
+          <p style="font-size:8pt;color:rgba(246,245,241,.78);line-height:1.65;font-weight:300;">Buying home furnishings online means imagining how pieces, colors, and scale work together. Most people can't — and abandon the cart. <strong style="color:var(--white);">Tamara Mack had a genuinely novel concept. The business model, experience architecture, and navigation logic were not.</strong> Three constraints: an ambitious founder with strong opinions, a tight timeline, and a need to ground every decision in evidence rather than preference.</p>
+        </div>
+
+        <div style="flex:1;padding-right:.3in;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">The Approach</span>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.07in;">
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>50 interviews, surveys, and observations to identify decision drivers and adoption barriers — not to validate the concept, but to understand the decision environment</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Synthesis used to define what the business could and couldn't be at launch — evidence-based tradeoffs rather than founder preference or team intuition</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Room-first experience model with four secondary routes for different shopping mindsets — hierarchy defined from research, not from aesthetics</li>
+            <li style="font-size:7.5pt;color:rgba(246,245,241,.72);line-height:1.55;padding-left:.14in;position:relative;"><span style="position:absolute;left:0;color:var(--accent);font-weight:700;">—</span>Facilitated explicit scope tradeoffs with the founder — making the cost of each decision visible against launch reality</li>
+          </ul>
+        </div>
+
+        <div style="flex:1;">
+          <span style="display:block;font-size:6.5pt;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid rgba(221,218,211,.22);padding-bottom:.06in;margin-bottom:.1in;">Role + Recognition</span>
+          <p style="font-size:7pt;color:rgba(246,245,241,.72);line-height:1.6;font-weight:300;margin-bottom:.1in;">Design Strategy + UX Lead. Primary Research · Synthesis · Experience Architecture · Information Architecture · Founder Enablement · Launch Strategy · Scope Facilitation</p>
+          <div style="background:rgba(26,39,68,.9);border-left:3px solid #c9a84c;padding:.1in .12in;">
+            <span style="display:block;font-size:8pt;font-weight:700;color:var(--white);">iMediaConnection Award — 2014</span>
+            <span style="display:block;font-size:6.5pt;font-weight:300;color:rgba(246,245,241,.5);margin-top:2px;">Named "innovative e-commerce site to watch" alongside HauteLook, Warby Parker, and AmazonCart</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">Concept → launch in 3 months</span>
+      <span class="pill">50 interviews → zero guesses</span>
+      <span class="pill">Industry award 2014</span>
+      <span class="pill">HauteLook / Warby Parker tier recognition</span>
+      <span class="pill">Zero scope creep at launch</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 9 — LAMONT BISHOP GALLERY
+     Operating Model · Cultural Enterprise Built from Zero
+════════════════════════════════════ -->
+<div class="page" style="background:var(--white);">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 08</div>
+    <div class="case-o">Lamont Bishop Gallery &nbsp;·&nbsp; Founding Director &nbsp;·&nbsp; Operating Model Build &nbsp;·&nbsp; 2010–Present</div>
+    <div class="case-hl">I built a cultural enterprise from zero — and kept it standing for fifteen years, through two cities and a pandemic</div>
+    <div class="case-tl">From a blank canvas in Downtown DC to a Brooklyn presence with national press coverage, Art Basel partnerships, and a COVID-era physical footprint that survived — a real-world operating model built under reputational and financial pressure, with no prior infrastructure.</div>
+  </div>
+
+  <!-- Gallery image -->
+  <div style="position:relative;flex-shrink:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/Screen-Shot-2026-02-04-at-8.13.59-PM.png"
+         style="width:100%;height:auto;display:block;max-height:2.8in;object-fit:cover;object-position:center;" alt="Lamont Bishop Gallery"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
+      <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">Gallery experience — welcoming, accessible environments designed for first-time collectors and seasoned patrons alike.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">15+</span><span class="sl">Years Operational<br/>Through COVID + City Changes</span></div>
+    <div class="sc"><span class="sn">2 Cities</span><span class="sl">DC + Brooklyn<br/>Distinct Market Builds</span></div>
+    <div class="sc"><span class="sn">Art Basel</span><span class="sl">Global Participation<br/>NBA Miami Heat Partnership</span></div>
+    <div class="sc"><span class="sn">3+</span><span class="sl">National Outlets<br/>Yahoo Finance · Hypebeast · Miami New Times</span></div>
+  </div>
+
+  <!-- 3-col body -->
+  <div class="body3">
+    <div class="col-w">
+      <span class="ey">What This Demonstrates</span>
+      <p class="bc">Anyone can design a service in a workshop. Fewer people have built one from nothing, operated it across two markets with distinct constraints, sustained a physical location through a global pandemic, and kept the experience quality intact throughout. <strong>The model has never been sold or shuttered. That's the metric.</strong> Credibility in high-trust markets must be designed and governed — not assumed.</p>
+    </div>
+
+    <div class="col-o">
+      <span class="ey">What Was Built</span>
+      <ul class="al">
+        <li>Frontstage design — clear entry points for first-time collectors, reducing intimidation and converting curiosity into trust</li>
+        <li>Backstage operations — production runbooks, partner communication rhythms, and post-event documentation creating consistency across every cycle</li>
+        <li>Credibility infrastructure — media relationships, collaboration frameworks, and partnership positioning for Art Basel, the NBA, and national press</li>
+        <li>Market expansion — DC to Brooklyn with the same adapted model, not a rebuild, across two distinct collector demographics and cost structures</li>
+        <li>COVID resilience — physical footprint maintained through operating model clarity: cost discipline, service adaptation, governance rules</li>
+      </ul>
+    </div>
+
+    <div class="col-wr">
+      <div class="qb">
+        <div class="qt">"Service design isn't artifacts. It's building the conditions for consistent delivery, credibility, and resilience — when real money, real stakeholders, and public reputation are on the line."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey">Role</span>
+        <div class="tags">
+          <span class="tag">Founding Director</span>
+          <span class="tag">Operating Model Design</span>
+          <span class="tag">Service System Architecture</span>
+          <span class="tag">Market Expansion</span>
+          <span class="tag">Credibility + Brand Governance</span>
+          <span class="tag">Resilience Planning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">15+ years standing</span>
+      <span class="pill">DC → Brooklyn expansion</span>
+      <span class="pill">Art Basel participation</span>
+      <span class="pill">National press: Yahoo Finance + Hypebeast + Miami New Times</span>
+      <span class="pill">COVID-era survival</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 10 — MAPPING SUCCESS
+     EOYDC · Research + Impact Strategy · $500K Grant
+════════════════════════════════════ -->
+<div class="page" style="background:var(--black);">
+  <div class="abar"></div>
+
+  <!-- Header over image -->
+  <div style="position:relative;height:3.2in;flex-shrink:0;overflow:hidden;background:var(--black);">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/EOYDC-Mapping-Success.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.45;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.82) 100%);"></div>
+    <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
+      <div class="case-n">Case 09</div>
+      <div class="case-o">EOYDC &nbsp;·&nbsp; Research + Impact Strategy &nbsp;·&nbsp; 2023–2024</div>
+      <div style="font-family:'EB Garamond',serif;font-size:22pt;font-weight:400;color:var(--white);line-height:1.2;max-width:6.5in;">Qualitative outcomes translated into $500K — because funders invest in proof, not stories</div>
+      <div class="case-tl">A research methodology and decision-support system that converts scattered qualitative evidence into funder-credible impact proof. Built for EOYDC, deployed in a competitive grant cycle. The CEO adopted it as her primary tool in every grant meeting — including her TED Talk.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow">
+    <div class="sc"><span class="sn">$500K</span><span class="sl">Propel Next Grant<br/>Sector's Most Competitive</span></div>
+    <div class="sc"><span class="sn">CEO</span><span class="sl">Adopted as Primary<br/>Tool in Every Grant Meeting</span></div>
+    <div class="sc"><span class="sn">1 system</span><span class="sl">Unified Impact Pathway<br/>Across All Programs</span></div>
+    <div class="sc"><span class="sn">Reusable</span><span class="sl">Methodology Scales<br/>Beyond the Engagement</span></div>
+  </div>
+
+  <!-- 2-col body dark -->
+  <div style="flex:1;display:flex;gap:1px;background:rgba(221,218,211,.12);">
+
+    <div style="flex:1;padding:.28in .28in .24in .65in;display:flex;flex-direction:column;gap:.2in;background:rgba(13,13,11,.6);">
+      <div>
+        <span class="ey dim">The Challenge</span>
+        <p class="bc lt">"We know we change lives" is not the same as "we can prove value credibly." Nonprofits create real, profound outcomes — confidence, safety, mentorship, academic persistence — but when it's time to ask for funding, <strong style="color:var(--white);">the proof system falls apart. Stories describe fragments. Dashboards capture activities, not value.</strong> This is a systems problem, not a storytelling problem. Better slides don't fix it.</p>
+      </div>
+      <div>
+        <span class="ey dim">The Methodology — Four Moves</span>
+        <ul class="al lt">
+          <li><strong style="color:rgba(246,245,241,.85);">Capture</strong> — primary research into participant experience described in their own words — real human signal before institutional filtering</li>
+          <li><strong style="color:rgba(246,245,241,.85);">Translate</strong> — synthesis normalizing across stakeholder perspectives; turning "confidence" and "belonging" into structured evidence</li>
+          <li><strong style="color:rgba(246,245,241,.85);">Visualize</strong> — executive-legible impact pathway the CEO could walk through live, in a grant meeting, without a designer in the room</li>
+          <li><strong style="color:rgba(246,245,241,.85);">Operationalize</strong> — proof system repeatable by the organization independently — a capability, not a deliverable</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="flex:1;padding:.28in .65in .24in .28in;display:flex;flex-direction:column;gap:.2in;background:rgba(26,39,68,.45);">
+      <div style="border-left:3px solid var(--accent);padding:.14in .16in;background:rgba(42,64,128,.2);">
+        <div class="qt lt">"The methodology doesn't flatten human outcomes into numbers. It builds a pathway from lived experience to investment-justifiable value — and keeps both visible at once."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey dim">What Was Built</span>
+        <p class="bc lt sm">System Map — end-to-end view of how the organization's work creates value, surfacing assumptions rather than implying them. Synthesis Framework — repeatable process so every new cohort feeds the same structure. Interactive Evidence Site — live proof library sponsors could open in a grant meeting, no deck required. <strong style="color:var(--white);">Used in the CEO's TED Talk.</strong></p>
+      </div>
+      <div>
+        <span class="ey dim">Role</span>
+        <div class="tags">
+          <span class="tag lt">Research Lead</span>
+          <span class="tag lt">Impact-to-Value Translation</span>
+          <span class="tag lt">Qualitative Research</span>
+          <span class="tag lt">System Design</span>
+          <span class="tag lt">Executive Tool Design</span>
+          <span class="tag lt">Grant Strategy</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">$500K Propel Next grant secured</span>
+      <span class="pill">CEO primary tool in every grant meeting</span>
+      <span class="pill">Funding increased post-launch</span>
+      <span class="pill">Used in CEO's TED Talk</span>
+      <span class="pill">Reusable methodology delivered</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 11 — KEYWAYS
+     Stigma-Aware Service Architecture · Opioid Support
+════════════════════════════════════ -->
+<div class="page" style="background:var(--white);">
+  <div class="abar"></div>
+
+  <div class="case-hdr">
+    <div class="case-n">Case 10</div>
+    <div class="case-o">Keyways &nbsp;·&nbsp; Service Design + System Architecture &nbsp;·&nbsp; Opioid Support Access</div>
+    <div class="case-hl">Shame was the barrier. The service architecture had to remove it — structurally, not symbolically</div>
+    <div class="case-tl">A stigma-aware access model built to reach people who couldn't afford to be seen — and move them toward care without increasing risk, exposure, or hesitation. Social-first entry, clinical pathway, participant website, service standards, and behavior-driven branding — five interlocking components designed as one system.</div>
+  </div>
+
+  <!-- Keyways image -->
+  <div style="position:relative;flex-shrink:0;">
+    <img src="https://caraabrown.com/wp-content/uploads/2025/11/World-Key-ways-2.png"
+         style="width:100%;height:auto;display:block;max-height:2.8in;object-fit:cover;object-position:center;" alt="Keyways program"/>
+    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,13,11,.9) 0%,transparent 100%);padding:.2in .65in .1in;">
+      <div style="font-size:7.5pt;font-weight:300;font-style:italic;color:rgba(246,245,241,.72);">Keyways — a stigma-aware opioid support program designed for people who couldn't afford to be seen approaching care publicly.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow" style="flex-shrink:0;">
+    <div class="sc"><span class="sn">5</span><span class="sl">Interlocking<br/>System Components</span></div>
+    <div class="sc"><span class="sn">Zero</span><span class="sl">Mandatory Disclosure<br/>Required to Enter</span></div>
+    <div class="sc"><span class="sn">Structural</span><span class="sl">Privacy Boundaries<br/>Not Just Promises</span></div>
+    <div class="sc"><span class="sn">Full</span><span class="sl">Staff + Clinical Partner<br/>Alignment Achieved</span></div>
+  </div>
+
+  <!-- 3-col body -->
+  <div class="body3">
+    <div class="col-w">
+      <span class="ey">The Challenge</span>
+      <p class="bc">Opioid support programs don't fail because of insufficient resources — they fail because the people most in need won't approach them. Shame, fear of being seen, and the social risk of proximity to stigmatized services create a gap no awareness campaign can close. <strong>What was needed wasn't promotion. It was a redesigned system of entry.</strong></p>
+    </div>
+
+    <div class="col-o">
+      <span class="ey">The Five-Component System</span>
+      <ul class="al">
+        <li><strong>Social-First Entry Architecture</strong> — campaign optimized for discreet, self-paced engagement; content and cadence calibrated against shame and hesitation</li>
+        <li><strong>Confidential Clinical Protocol</strong> — structured pathway for program managers to engage doctors, reducing variability regardless of which clinician was present</li>
+        <li><strong>Isolated Participant Website</strong> — structurally separated from adjacent programs so participation could not be inferred through proximity</li>
+        <li><strong>Service Language + Rules of Engagement</strong> — codified standards for what staff say and how they build trust during early contact</li>
+        <li><strong>Behavior-Driven Brand System</strong> — color theory and symbology optimized for instinctive safety and approachability signals</li>
+      </ul>
+    </div>
+
+    <div class="col-wr">
+      <div class="qb">
+        <div class="qt">"For stigmatized services, privacy must be structurally designed — channels, language, and digital separation — not merely promised."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey">Role</span>
+        <div class="tags">
+          <span class="tag">Design Strategy Lead</span>
+          <span class="tag">Service Architecture</span>
+          <span class="tag">Behavioral Research</span>
+          <span class="tag">Stigma-Aware Design</span>
+          <span class="tag">Brand Systems</span>
+          <span class="tag">Clinical Protocol Design</span>
+          <span class="tag">Staff Training</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">Stigma-aware access model launched</span>
+      <span class="pill">Social campaign deployed</span>
+      <span class="pill">Participant website structurally isolated</span>
+      <span class="pill">Clinical protocol codified</span>
+      <span class="pill">Staff fully trained and aligned</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PAGE 12 — TRAVELTRANSFORMS
+     EOYDC · Service Design + System Design · Live Platform
+════════════════════════════════════ -->
+<div class="page" style="background:var(--black);">
+  <div class="abar"></div>
+
+  <!-- Header over image -->
+  <div style="position:relative;height:3.2in;flex-shrink:0;overflow:hidden;background:var(--black);">
+    <img src="https://caraabrown.com/wp-content/uploads/2026/02/traveltransforms-platform-home.png"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.5;display:block;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,11,.1) 0%,rgba(13,13,11,.82) 100%);"></div>
+    <div style="position:absolute;inset:0;padding:.32in .65in;display:flex;flex-direction:column;justify-content:flex-end;gap:.06in;">
+      <div class="case-n">Case 11</div>
+      <div class="case-o">EOYDC &nbsp;·&nbsp; Service Design + System Design &nbsp;·&nbsp; 2024</div>
+      <div style="font-family:'EB Garamond',serif;font-size:22pt;font-weight:400;color:var(--white);line-height:1.2;max-width:6.5in;">Sponsor impact was real. No one could see it. I built a live platform that changed that</div>
+      <div class="case-tl">TravelTransforms converted scattered student stories, photos, and emails into a live, sponsor-accessible proof system — reducing reporting burden while making impact visible, reusable, and scalable for funding conversations.</div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="srow">
+    <div class="sc"><span class="sn">10</span><span class="sl">Artifacts Published<br/>Essays · Photography · Proof</span></div>
+    <div class="sc"><span class="sn">Live</span><span class="sl">Platform Accessible<br/>to Sponsors Anytime</span></div>
+    <div class="sc"><span class="sn">Zero</span><span class="sl">Quarterly Decks<br/>Required Post-Launch</span></div>
+    <div class="sc"><span class="sn">∞</span><span class="sl">Stories Reusable<br/>Across Renewals + Grants</span></div>
+  </div>
+
+  <!-- 2-col body dark -->
+  <div style="flex:1;display:flex;gap:1px;background:rgba(221,218,211,.12);">
+
+    <div style="flex:1;padding:.28in .28in .24in .65in;display:flex;flex-direction:column;gap:.2in;background:rgba(13,13,11,.6);">
+      <div>
+        <span class="ey dim">The Challenge</span>
+        <p class="bc lt">Southwest Airlines was a significant sponsor. Students were traveling to New York, Mexico City, Clark Atlanta — meeting elected officials, attending the Obama Foundation. None of it was visible in a way sponsors could access, share, or use in renewal conversations. <strong style="color:var(--white);">Staff were manually assembling photo collections for each reporting cycle.</strong> The impact was real but the proof system was extractive — it cost more to maintain than it gave back.</p>
+      </div>
+      <div>
+        <span class="ey dim">The System</span>
+        <ul class="al lt">
+          <li>Standardized story format — program context, student reflection, photography, engagement proof — so every cohort feeds a scannable, comparable library</li>
+          <li>Sponsor-ready access without staff intermediaries — direct, anytime access to a live proof library for Southwest and other sponsors</li>
+          <li>Publishing flow that inverts the reporting burden — student submissions populate the platform, staff involvement in reporting drops</li>
+          <li>Credibility infrastructure — Obama Foundation participation, congressional visits, civic engagement documented and surfaced as findable, shareable proof</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="flex:1;padding:.28in .65in .24in .28in;display:flex;flex-direction:column;gap:.2in;background:rgba(26,39,68,.45);">
+      <div style="border-left:3px solid var(--accent);padding:.14in .16in;background:rgba(42,64,128,.2);">
+        <div class="qt lt">"This is a service design project disguised as a website. The real work was designing the system — the story structure that makes impact repeatable, the access model that removes friction for sponsors."</div>
+        <div class="qa">Cara A. Brown</div>
+      </div>
+      <div>
+        <span class="ey dim">What Was Removed</span>
+        <p class="bc lt sm">Manual photo collection eliminated. Quarterly deck production eliminated. One-off presentation builds eliminated. The platform replaced extraction with self-service — <strong style="color:var(--white);">funders get what they need to stay funded; staff get time back.</strong></p>
+      </div>
+      <div>
+        <span class="ey dim">Role</span>
+        <div class="tags">
+          <span class="tag lt">Service + System Design Lead</span>
+          <span class="tag lt">Donor Experience Design</span>
+          <span class="tag lt">Content Architecture</span>
+          <span class="tag lt">Impact Communication</span>
+          <span class="tag lt">Platform + Publishing Systems</span>
+          <span class="tag lt">Nonprofit Operations</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="outrow">
+    <span class="outlabel">Outcomes</span>
+    <div class="outpills">
+      <span class="pill">Live sponsor-access platform launched</span>
+      <span class="pill">Manual reporting eliminated</span>
+      <span class="pill">10 published impact artifacts</span>
+      <span class="pill">Southwest Airlines self-serve access</span>
+      <span class="pill">Scalable story library built</span>
+    </div>
+  </div>
+  <div class="pfoot"><span>Cara A. Brown, MBA &nbsp;·&nbsp; Work Sample</span><span>Read more at caraabrown.com</span></div>
+</div>
+
+</div><!-- /doc -->
+</body>
+</html>
